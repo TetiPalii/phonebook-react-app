@@ -10,6 +10,4 @@ export const Form = styled.form`
   padding: 30px;
 `;
 
-export const FormDiv = styled.div`
-  /* box-shadow: 1px 1px 5px gray; */
-`;
+
