@@ -1,23 +1,16 @@
-// import { ContactForm } from '../contactsForm/ContactForm';
-// import { SearchContact } from '../searchContact/SearchContact';
-// import { ContactList } from '../contactList/ContactList';
-// import { Notification } from '../notification/Notification';
-// import { Section } from '../section/Section';
-// import css from './App.module.css';
 import { useDispatch } from 'react-redux';
-// import { selectError, selectIsLoading, selectItems } from 'redux/selectors';
 import { lazy, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import { SharedLayout } from 'components/sharedLayout/SharedLayout';
 import { Contacts } from 'pages/Contacts';
 import { RestrictedRoute } from 'components/RestrictedRoute';
 import { PrivateRoute } from 'components/PrivateRoute';
-import { useAuth } from '../../redux/auth/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 import { refreshUser } from '../../redux/auth/authOperations';
 import { CssVarsProvider } from '@mui/joy/styles';
 import Sheet from '@mui/joy/Sheet';
 
-const Home = lazy(() => import('../../pages/Home'));
+const Home = lazy(() => import('../../pages/home/Home'));
 const LogIn = lazy(() => import('../../pages/LogIn'));
 const Register = lazy(() => import('../../pages/Register'));
 

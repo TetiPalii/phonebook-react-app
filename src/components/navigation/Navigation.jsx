@@ -1,5 +1,5 @@
 import { NavLinkAuth } from 'components/authNav/AuthNav.styled';
-import { useAuth } from '../../redux/auth/useAuth';
+import { useAuth } from '../../hooks/useAuth';
 
 export const Navigation = () => {
   const { isLoggedIn } = useAuth();
