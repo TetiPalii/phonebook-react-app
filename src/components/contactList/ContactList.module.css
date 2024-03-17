@@ -1,0 +1,28 @@
+.item__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item__text {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.text__container {
+  margin-right: 20px;
+}
+.item__contact:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact__btn {
+  height: 20px;
+  width: 80px;
+  /* margin-left: 10px; */
+}
+
+.button__container {
+  display: flex;
+  justify-content: center;
+}

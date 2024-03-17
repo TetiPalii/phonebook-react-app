@@ -1,0 +1,8 @@
+.section {
+  padding: 40px;
+  background-color: aliceblue;
+  box-shadow: 1px 1px 5px gray;
+}
+.section:not(:last-child) {
+  margin-bottom: 15px;
+}
